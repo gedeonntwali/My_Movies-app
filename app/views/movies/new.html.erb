@@ -1,0 +1,19 @@
+<h1> New Movie </h1>
+
+<%= form_tag "/movies", method: :post do%>
+  <div>
+    Title: <input type="text"  name="title">
+  </div>
+
+  <div>
+    Genre: <input type="text"  name="genre">
+  </div>
+
+  <div>
+    Year: <input type="text"  name="year">
+  </div>
+
+  <div>
+    <input type="submit"  name="Create Movie">
+  </div>
+<% end %>
